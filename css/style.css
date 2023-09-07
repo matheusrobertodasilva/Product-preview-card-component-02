@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    /* Font */
+    --Fraunces: 'Fraunces', serif;
+    --Montserrat: 'Montserrat', sans-serif;;
+}
+
+body{
+    background-color: var(--Cream);
+    color: var(--Dark-grayish-blue);
+    display: flex;
+    font-size: 14px;
+    font-family: var(--Montserrat);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+section {
+    background-color: var(--White);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.image__mobile{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.image__desktop{
+    display: none;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Card do perfume */
+.info__perfume{
+    
+}
+
+.info__subtitle{
+    letter-spacing: .4rem;
+    font-size: 12px;
+}
+
+.info__title{
+    font-size: 30px;
+    font-family: var(--Fraunces);
+    color: var(--Very-dark-blue);
+    margin-top: 18px;
+}
+
+.info__text{
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Valor */
+.values{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.value-1{
+    font-family: var(--Fraunces);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+    margin-right: 20px;
+}
+
+.value-2{}
+
+.button__cart{
+    border-style: none;
+    background-color: var(--Dark-cyan);
+    border-radius: 10px;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding: 15px 98px;
+}   
+
+.button__cart img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+
+@media screen and (min-width:1440px){
+    /* informação do perfume */
+    section{
+        width: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card{
+        padding: 2px;
+        margin: 0 20px;
+    }
+
+    .image__mobile{
+        display: none;
+    }
+
+   .image__desktop{
+    display: block;
+    width: 30vh;
+    border-radius: 10px 0 0 10px;
+   }
+
+   /* valores do perfume */
+
+
+   /* botão */
+   .button__cart{
+    padding: 15px 60px;
+   }
+
+   .button__cart:hover{
+    background: #1a4031;
+    cursor: pointer;
+   }
+
+}
