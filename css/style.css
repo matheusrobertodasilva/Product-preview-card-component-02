@@ -47,7 +47,6 @@ img{
 .card{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 20px;
 }
@@ -89,18 +88,14 @@ img{
     margin-right: 20px;
 }
 
-.value-2{}
 
 .button__cart{
     border-style: none;
     background-color: var(--Dark-cyan);
     border-radius: 10px;
     color: var(--White);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 700;
-    padding: 15px 98px;
+    padding: 15px 0px;
 }   
 
 .button__cart img{
@@ -109,19 +104,17 @@ img{
 }
 
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1080px){
     /* informação do perfume */
     section{
         width: 60vh;
         display: flex;
         justify-content: center;
-        align-items: center;
         padding: 0;
     }
 
     .card{
-        padding: 2px;
-        margin: 0 20px;
+        padding: 0px 50px;
     }
 
     .image__mobile{
@@ -138,9 +131,6 @@ img{
 
 
    /* botão */
-   .button__cart{
-    padding: 15px 60px;
-   }
 
    .button__cart:hover{
     background: #1a4031;
